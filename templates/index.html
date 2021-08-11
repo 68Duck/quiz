@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}68 Duck{% endblock %}
+{% block links %}<link rel="stylesheet" href="{{url_for('static',filename='indexStyle.css')}}" type="text/css">{% endblock %}
+{% block scripts %}<script src="{{url_for('static', filename='app.js')}}" type="text/javascript"></script>{% endblock %}
+{% block header %}
+Email
+{% endblock %}
+{% block content %}
+<div class="background">
+  <span>Email: <input type="text" placeholder="Input Email" id="emailInput" class="lineInput"/></span>
+  <br/>
+  <span>Password: <input type="password" placeholder="Input Password" id="passwordInput" class="lineInput"/></span>
+  <br/>
+  Message:
+  <textarea name="name" rows="8" cols="80" id="messageArea"></textarea>
+  <br/>
+  <button class="btn" id="submitButton" onclick="submitPressed()" >Submit</button>
+</div>
+
+{% endblock %}
