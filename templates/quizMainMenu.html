@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}68 Duck{% endblock %}
+{% block links %}<link rel="stylesheet" href="{{url_for('static',filename='indexStyle.css')}}" type="text/css">{% endblock %}
+{% block scripts %}<script src="{{url_for('static', filename='app.js')}}" type="text/javascript"></script>{% endblock %}
+{% block header %}
+Main Menu
+{% endblock %}
+{% block content %}
+<br/>
+<div id="levelSelection" class="background grid">
+    <div id="11+Level" class="level elevenPlusLevel">
+      <a href="/elevenPlusQuiz">
+      <image src="{{url_for('static', filename='Images/elevenPlusLevel.png')}}" class="levelImage"/>
+    </a>
+    </div>
+    <div id="GCSELevel" class="level GCSELevel">
+      <a href="/GCSEQuiz">
+      <image src="{{url_for('static', filename='Images/GCSELevel.png')}}" class="levelImage"/>
+    </a>
+    </div>
+</div>
+
+{% endblock %}
