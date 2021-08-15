@@ -10,8 +10,29 @@
 <div id ="questionBackground" class="questionContainer">
   <div id="question" class="question"></div>
   <div id = "answers" class="answers"></div>
-  <button class="btn hide nextBtn">Next</button>
-  </div>
+  <button id="nextButton" class="btn hide nextBtn">Next</button>
 </div>
+
+<div id="resultsContainer" class="resultsContainer hide">
+  <div id="resultsScreen" class="resultsScreen">
+    Results:
+    <br/>
+    <br/>
+    <div id="scoreDisplayContainer">
+
+      <div id="scoreDisplay" class="scoreDisplay">
+        <span class="progressLeft">
+          <span class="progressBar"></span>
+        </span>
+        <span class="progressRight">
+          <span class="progressBar"></span>
+        </span>
+        <div class="progressValue"></div>
+      </div>
+    </div>
+    </div>
+    <button class="btn restartButton">Restart</button>
+</div>
+
 
 {% endblock %}
